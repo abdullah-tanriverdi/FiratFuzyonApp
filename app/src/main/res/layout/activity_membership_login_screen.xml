@@ -146,7 +146,7 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/uyeGirisiGirisYapButtonLayout"
+                android:id="@+id/membershipCardViewLoginButtonLayout"
                 android:layout_width="250dp"
                 android:layout_height="64dp"
                 android:layout_gravity="center"
