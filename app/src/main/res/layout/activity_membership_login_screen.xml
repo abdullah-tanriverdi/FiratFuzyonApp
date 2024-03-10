@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/loginpageroutingbackgroundwithoutappname"
+    tools:context=".MembershipLoginScreenActivity">
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+      />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        android:elevation="20dp"
+        android:background="@drawable/custombuttonloginpagerouting">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/membershipCardViewLoginText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/girisYap"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textColor="@color/burgundy"
+                android:fontFamily="@font/poppins"/>
+
+            <RelativeLayout
+                android:id="@+id/membershipCardViewUsernameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/custombuttonloginpagerouting"
+                android:layout_marginBottom="16dp"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:src="@drawable/custombuttonloginpagerouting"
+                    app:tint="#ffff" />
+
+                <RelativeLayout
+                    android:layout_width="65dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/custombuttonloginpagerouting">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:src="@drawable/baseline_person_24"
+                        app:tint="#fff" />
+
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/membershipCardViewUsernameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="65dp"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:hint="@string/kullaniciAdi"
+                    android:maxLength="22"
+                    android:textColor="@color/burgundy"
+                    android:textSize="15sp"
+                    android:background="@null"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/membershipCardViewPasswordLayout"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/custombuttonloginpagerouting"
+                android:layout_marginBottom="16dp"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:src="@drawable/custombuttonloginpagerouting"
+                    app:tint="#ffff" />
+
+                <RelativeLayout
+                    android:layout_width="65dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/custombuttonloginpagerouting">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:src="@drawable/baseline_lock_24"
+                        app:tint="#fff" />
+
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/membershipCardViewPasswordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="65dp"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:inputType="textPassword"
+                    android:hint="@string/parola"
+                    android:textColor="@color/burgundy"
+                    android:textSize="15sp"
+                    android:background="@null"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/uyeGirisiGirisYapButtonLayout"
+                android:layout_width="250dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:background="@drawable/custombuttonloginpagerouting"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="30dp"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:src="@drawable/custombuttonloginpagerouting" />
+
+
+
+                <TextView
+                    android:id="@+id/membershipCardViewLoginTextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:text="@string/girisYap"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/membershipCardViewForgotPasswordText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+               android:layout_gravity="center"
+                android:text="@string/sifremiUnuttum"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="@color/burgundy"
+               />
+            <TextView
+                android:id="@+id/membershipCardViewContactUsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_gravity="center"
+                android:text="@string/bizeUlasın"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:textColor="@color/burgundy"
+                android:layout_marginBottom="5dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/membershipSignUpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="@string/hesabınYokMu"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="@color/burgundy"
+        />
+
+    <TextView
+        android:id="@+id/membersipSecurityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="@string/gizlilik"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:textColor="@color/burgundy"
+        android:layout_marginBottom="20dp"/>
+
+
+
+</LinearLayout>

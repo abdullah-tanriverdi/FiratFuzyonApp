@@ -7,7 +7,7 @@ import com.tanriverdi.firatfuzyon.databinding.ActivityLoginPageRoutingBinding
 
 class LoginPageRoutingActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityLoginPageRoutingBinding
+    private lateinit var binding:ActivityLoginPageRoutingBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginPageRoutingBinding.inflate(layoutInflater)
@@ -16,7 +16,7 @@ class LoginPageRoutingActivity : AppCompatActivity() {
 
 
         binding.uyeGirisiButtonLayout.setOnClickListener{
-            val intent = Intent(this@LoginPageRoutingActivity, MainActivity::class.java)
+            val intent = Intent(this@LoginPageRoutingActivity, MembershipLoginScreenActivity::class.java)
             startActivity(intent)
         }
 

@@ -13,6 +13,9 @@
         android:theme="@style/Theme.FiratFuzyon"
         tools:targetApi="31">
         <activity
+            android:name=".MembershipLoginScreenActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginPageRoutingActivity"
             android:exported="false" />
         <activity
