@@ -9,14 +9,14 @@ class SplashScreenActivity : AppCompatActivity() {
 
 
     // Başlangıç ekranının gösterim süresi tanımlanır.
-    private val splashTimeOut: Long = 1000
+    private val splashTimeOut: Long = 2000
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
 
         // Belirli bir süre gecikme sonrasında istenilen Activitye geçiş yapacak işlemler tanımlanır.
         Handler().postDelayed({
-            val intent = Intent (this@SplashScreenActivity, MainActivity::class.java)
+            val intent = Intent (this@SplashScreenActivity, OnboardingScreenActivity::class.java)
             startActivity(intent)
             finish()
         }, splashTimeOut)

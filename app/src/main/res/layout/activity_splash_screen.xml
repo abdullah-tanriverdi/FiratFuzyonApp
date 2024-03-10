@@ -39,7 +39,7 @@
         android:fontFamily="@font/poppins"
         android:textColor="@color/burgundy"
         android:textSize="20sp"
-        android:text="@string/slogan"/>
+        android:text="@string/slogan" />
 
 
 </RelativeLayout>

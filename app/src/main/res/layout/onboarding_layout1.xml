@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/onboarding_layout_image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/onboarding1" />
+
+    <TextView
+        android:id="@+id/onboarding_layout_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/onboarding_layout_image"
+        android:fontFamily="@font/poppins"
+        android:textSize="30sp"
+        android:textColor="@color/burgundy"
+        android:text="Başlık"
+        android:shadowColor="#888888"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"/>
+
+    <TextView
+        android:id="@+id/onboarding_layout_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/onboarding_layout_text1"
+        android:fontFamily="@font/poppins"
+        android:textStyle="normal"
+        android:textSize="30sp"
+        android:textColor="@color/burgundy"
+        android:layout_marginTop="15dp"
+        android:text="Açıklama" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom|start"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp">
+
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/prevButton"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:src="@drawable/baseline_arrow_circle_left_24"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/nextButton"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:src="@drawable/baseline_arrow_circle_right_24"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
