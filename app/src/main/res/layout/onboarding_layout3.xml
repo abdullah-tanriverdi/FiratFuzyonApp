@@ -18,33 +18,28 @@
         android:id="@+id/onboarding_layout_text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="40dp"
+        android:layout_margin="30dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:layout_below="@id/onboarding_layout_image"
         android:fontFamily="@font/poppins"
         android:textSize="30sp"
         android:textColor="@color/burgundy"
-        android:text="Başlık"
-        android:shadowColor="#888888"
-        android:shadowDx="2"
-        android:shadowDy="2"
-        android:shadowRadius="4"/>
+        android:text="@string/baslık"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/onboarding_layout_text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="40dp"
+        android:layout_margin="10dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/onboarding_layout_text1"
         android:fontFamily="@font/poppins"
         android:textStyle="normal"
         android:textSize="30sp"
         android:textColor="@color/burgundy"
-        android:layout_marginTop="15dp"
-        android:text="Açıklama" />
-
+        android:text="@string/acıklama" />
 
     <LinearLayout
         android:layout_width="match_parent"

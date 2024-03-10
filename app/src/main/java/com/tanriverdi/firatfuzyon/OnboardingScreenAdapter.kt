@@ -75,7 +75,7 @@ class OnboardingScreenAdapter(private val context : Context , private val activi
             3 -> {
 
                 holder.nextButton.setOnClickListener {
-                    activity.startActivity(Intent(context , MainActivity::class.java))
+                    activity.startActivity(Intent(context , LoginPageRoutingActivity::class.java))
                     activity.finish()
                 }
 

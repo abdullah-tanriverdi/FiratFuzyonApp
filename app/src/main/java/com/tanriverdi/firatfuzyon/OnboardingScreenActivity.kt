@@ -51,7 +51,7 @@ class OnboardingScreenActivity : AppCompatActivity() {
         }else{
 
             // Eğer onboarding daha önce gösterildiyse, Activity'e geçiş yap ve bu aktiviteyi kapat
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, LoginPageRoutingActivity::class.java))
             finish()
         }
 

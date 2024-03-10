@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">FIRAT FÜZYON</string>
     <string name="slogan">Kampüs Ritmini Yakala</string>
+    <string name="uyeGirisi">Üye Girişi</string>
+    <string name="toplulukGirisi">Topluluk Girişi</string>
+    <string name="baslık">Lorem Ipsum</string>
+    <string name="acıklama">Lorem ipsum doldaesit amet, consectetur
+        adipiscing elit, sed do eiusmod tempor inca.</string>
+
+
 
 </resources>

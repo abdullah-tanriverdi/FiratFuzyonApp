@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom|center"
+    android:background="@drawable/loginpageroutingbackground"
+    tools:context=".LoginPageRoutingActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/uyeGirisiButtonLayout"
+        android:layout_width="335dp"
+        android:layout_height="64dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/custombuttonloginpagerouting"
+        android:layout_marginBottom="16dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/custombuttonloginpagerouting"
+            app:tint="#ffff" />
+
+        <RelativeLayout
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/custombuttonloginpagerouting">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:src="@drawable/baseline_person_24"
+                app:tint="#fff" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="65dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="@string/uyeGirisi"
+            android:textColor="@color/burgundy"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/toplulukGirisiButtonLayout"
+        android:layout_width="335dp"
+        android:layout_height="64dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/custombuttonloginpagerouting"
+        android:layout_marginTop="16dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/custombuttonloginpagerouting"
+            app:tint="#ffff" />
+
+        <RelativeLayout
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/custombuttonloginpagerouting">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:src="@drawable/baseline_group_24"
+                app:tint="#fff" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="65dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="@string/toplulukGirisi"
+            android:textColor="@color/burgundy"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
