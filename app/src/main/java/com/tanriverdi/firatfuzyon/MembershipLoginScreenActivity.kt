@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.tanriverdi.firatfuzyon.databinding.ActivityMembershipLoginScreenBinding
 
+
 class MembershipLoginScreenActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityMembershipLoginScreenBinding
@@ -18,6 +19,12 @@ class MembershipLoginScreenActivity : AppCompatActivity() {
         binding.membershipCardViewContactUsText.setOnClickListener{
             //  Intent ile ContactUsActivity'yi başlat
             val intent = Intent(this@MembershipLoginScreenActivity,ContactUsActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.membersipSecurityText.setOnClickListener{
+            // Intent ile PrivacyPolicyActivity'yi başlat
+            val intent = Intent(this@MembershipLoginScreenActivity,PrivacyPolicyActivity::class.java)
             startActivity(intent)
         }
     }
