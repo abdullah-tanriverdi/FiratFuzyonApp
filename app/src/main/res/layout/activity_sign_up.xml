@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusableInTouchMode="true"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:gravity="center|top"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/sonadımsignUpText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sen de FIRAT'lıysan Hemen Katıl Bize"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:textColor="@color/burgundy"
+            android:layout_marginTop="70dp"
+            android:fontFamily="@font/poppins"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            app:cardCornerRadius="30dp"
+            android:elevation="20dp"
+            android:background="@drawable/custombuttonloginpagerouting">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:padding="24dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/schoolEmailCardViewLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/custombuttonloginpagerouting"
+                    android:layout_marginBottom="16dp"
+                    tools:ignore="MissingConstraints">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:src="@drawable/custombuttonloginpagerouting"
+                        app:tint="#ffff" />
+
+                    <EditText
+                        android:id="@+id/schoolEmailCardViewEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:background="@null"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:maxLength="22"
+                        android:maxLines="1"
+                        android:hint="Okul E-Postası"
+                        android:textColor="@color/burgundy"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/passwordCardViewLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/custombuttonloginpagerouting"
+                    android:layout_marginBottom="16dp"
+                    tools:ignore="MissingConstraints">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:src="@drawable/custombuttonloginpagerouting"
+                        app:tint="#ffff" />
+
+                    <EditText
+                        android:id="@+id/passwordCardViewEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:background="@null"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:hint="Parola Belirle"
+                        android:inputType="textPassword"
+                        android:textColor="@color/burgundy"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/signUpCardViewContinueButtonLayout"
+                    android:layout_width="250dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/custombuttonloginpagerouting"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="30dp"
+                    tools:ignore="MissingConstraints">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:src="@drawable/custombuttonloginpagerouting" />
+
+                    <TextView
+                        android:id="@+id/signUpCardViewContinueTextButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:text="Devam Et"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/alreadyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Zaten Hesabın Var Mı!!!"
+            android:textSize="21sp"
+            android:textAlignment="center"
+            android:textColor="@color/burgundy"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+</ScrollView>

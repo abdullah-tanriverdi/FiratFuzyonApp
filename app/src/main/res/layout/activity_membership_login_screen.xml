@@ -87,7 +87,6 @@
                     android:fontFamily="@font/poppins"
                     android:gravity="center"
                     android:hint="@string/kullaniciAdi"
-                    android:maxLength="22"
                     android:textColor="@color/burgundy"
                     android:textSize="15sp"
                     android:background="@null"/>
