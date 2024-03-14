@@ -48,6 +48,12 @@ class MembershipLoginScreenActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.membershipCardViewForgotPasswordText.setOnClickListener {
+            val intent= Intent(this, ForgotPasswordActivity::class.java)
+            startActivity(intent)
+
+        }
+
         binding.membershipCardViewLoginTextButton.setOnClickListener {
             val email = binding.membershipCardViewUsernameEditText.text.toString()
           val password = binding.membershipCardViewPasswordEditText.text.toString()
@@ -58,8 +64,9 @@ class MembershipLoginScreenActivity : AppCompatActivity() {
             }else{
                 auth.signInWithEmailAndPassword(email,password).addOnSuccessListener {
                     val intent = Intent(this,UyelikHomeActivity::class.java)
-                   startActivity(intent)
-                   finish()
+                    intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+                    startActivity(intent)
+                    finish()
                 }.addOnFailureListener {
                     Toast.makeText(this,it.localizedMessage,Toast.LENGTH_SHORT).show()
 

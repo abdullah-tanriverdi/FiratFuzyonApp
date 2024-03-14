@@ -38,6 +38,7 @@ class SignUpActivity : AppCompatActivity() {
         binding.alreadyText.setOnClickListener {
             val intent = Intent(this, MembershipLoginScreenActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
 
