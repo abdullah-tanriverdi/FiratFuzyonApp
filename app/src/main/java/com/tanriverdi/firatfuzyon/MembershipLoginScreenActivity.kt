@@ -77,7 +77,7 @@ class MembershipLoginScreenActivity : AppCompatActivity() {
                 auth.signInWithEmailAndPassword(email, password).addOnSuccessListener {
                     // Başarılı giriş
                     Toast.makeText(this, "Giriş başarılı", Toast.LENGTH_SHORT).show()
-                    val intent = Intent(this, UyelikHomeActivity::class.java)
+                    val intent = Intent(this, UyelikProfilScreenActivity::class.java)
                     intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
                     startActivity(intent)
                     finish()

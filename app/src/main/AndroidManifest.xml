@@ -18,6 +18,9 @@
         android:theme="@style/Theme.FiratFuzyon"
         tools:targetApi="31">
         <activity
+            android:name=".UyelikProfilScreenActivity"
+            android:exported="false" />
+        <activity
             android:name=".ForgotPasswordActivity"
             android:exported="false" />
         <activity
